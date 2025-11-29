@@ -110,7 +110,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 This course includes a certificate upon completion. Certificate stored in personal portfolio (external to this repository).
 
 ## Progress Tracking
-- **Started:** [Date]
+- **Started:** November 2025
 - **Current Module:** Module 2 - Accessing Claude with the API
 - **Completion:** 0/10 modules
 
