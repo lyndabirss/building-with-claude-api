@@ -104,6 +104,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 ## Prerequisites
 - Python 3.x
 - Anthropic API key
+- Jupyter Notebook or JupyterLab (for `.ipynb` files)
 - Basic understanding of APIs and REST principles
 
 ## Certificate
@@ -115,4 +116,6 @@ This course includes a certificate upon completion. Certificate stored in person
 - **Completion:** 0/10 modules
 
 ## Notes
-This repository contains practical exercises and coursework. Each module folder includes working code examples and notes from the lessons.
+Each module folder includes:
+- Working code examples (Jupyter notebooks)
+- Comments and markdown cells explaining key concepts
