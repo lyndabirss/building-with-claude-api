@@ -16,7 +16,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 ### 2. Accessing Claude with the API
 - [x] Getting an API key
 - [x] Making a request
-- [ ] Multi-turn conversations
+- [x] Multi-turn conversations
 - [ ] System prompts
 - [ ] Temperature
 - [ ] Response streaming
