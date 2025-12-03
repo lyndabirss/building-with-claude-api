@@ -19,7 +19,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Multi-turn conversations
 - [x] System prompts
 - [x] Temperature
-- [ ] Response streaming
+- [x] Response streaming
 - [ ] Controlling model output
 - [ ] Structured data
 
