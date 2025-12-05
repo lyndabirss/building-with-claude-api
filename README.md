@@ -21,7 +21,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Temperature
 - [x] Response streaming
 - [x] Controlling model output
-- [ ] Structured data
+- [x] Structured data
 
 ### 3. Prompt Evaluation
 - [ ] Prompt evaluation overview
