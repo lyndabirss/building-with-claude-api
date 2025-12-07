@@ -24,10 +24,10 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Structured data
 
 ### 3. Prompt Evaluation
-- [ ] Prompt evaluation overview
-- [ ] A typical eval workflow
-- [ ] Generating test datasets
-- [ ] Running the eval
+- [x] Prompt evaluation overview
+- [x] A typical eval workflow
+- [x] Generating test datasets
+- [x] Running the eval
 - [ ] Model based grading
 - [ ] Code based grading
 
