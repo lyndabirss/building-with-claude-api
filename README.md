@@ -28,8 +28,8 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] A typical eval workflow
 - [x] Generating test datasets
 - [x] Running the eval
-- [ ] Model based grading
-- [ ] Code based grading
+- [x] Model based grading
+- [x] Code based grading
 
 ### 4. Prompt Engineering Techniques
 - [ ] Being clear and direct
