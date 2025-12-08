@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that parses an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path' and returns just the bucket name."
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (s3://bucket-name/key/path)",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to a specific DynamoDB table named 'users-table'."
+    "task": "Create a JSON configuration object for an AWS Lambda function that sets environment variables, timeout, and memory allocation",
+    "format": "json"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs in the format 'i-' followed by 17 hexadecimal characters (e.g., i-0abcd1234efgh5678)."
+    "task": "Write a Python function that validates if a given string is a valid AWS IAM role ARN format",
+    "format": "python"
   }
 ]
