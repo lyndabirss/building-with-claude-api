@@ -32,9 +32,9 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Code based grading
 
 ### 4. Prompt Engineering Techniques
-- [ ] Being clear and direct
-- [ ] Being specific
-- [ ] Structure with XML tags
+- [x] Being clear and direct
+- [x] Being specific
+- [x] Structure with XML tags
 - [ ] Providing examples
 
 ### 5. Tool Use with Claude
