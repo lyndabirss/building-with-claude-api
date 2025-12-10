@@ -35,7 +35,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Being clear and direct
 - [x] Being specific
 - [x] Structure with XML tags
-- [ ] Providing examples
+- [x] Providing examples
 
 ### 5. Tool Use with Claude
 - [ ] Introduction to tool use
