@@ -1,50 +1,39 @@
 [
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "72 kg",
-      "goal": "Marathon training - high energy intake with carbohydrate loading for endurance performance",
-      "restrictions": "None"
+      "content": "The ribosome facilitates protein synthesis through a coordinated mechanism involving mRNA translation and tRNA recognition. During this process, the ribosomal subunits bind to the initiation complex, where specific codons are matched with anticodons in a sequence-dependent manner. Simultaneously, genetic expression is regulated at multiple levels: transcriptional control determines which genes are activated through promoter binding and chromatin remodeling, while post-transcriptional modifications including 5' capping and 3' polyadenylation enhance mRNA stability and translation efficiency. Furthermore, epigenetic mechanisms such as DNA methylation and histone acetylation modulate chromatin accessibility, directly influencing gene expression patterns. The nascent polypeptide chain emerges from the ribosomal exit tunnel, where molecular chaperones assist in proper protein folding to achieve functional three-dimensional conformations essential for cellular function."
     },
     "solution_criteria": [
-      "Meal plan includes 4-5 meals/snacks with high carbohydrate content (60-65% of total calories)",
-      "Includes pre-training and post-training meal timing appropriate for marathon runner",
-      "Total daily calorie intake appropriate for 72kg endurance athlete (approximately 3000-3500 calories)",
-      "All meals are energy-dense and practical to prepare/consume within one day"
+      "Extracts all major distinct topics including: protein synthesis, mRNA translation, genetic expression, transcriptional control, post-transcriptional modifications, epigenetic mechanisms, and protein folding",
+      "Separates related but distinct concepts (e.g., does not conflate mRNA translation with genetic expression, or transcriptional control with epigenetic regulation)",
+      "Returns output as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, focusing on whether the meal plan prioritizes energy density and includes appropriate timing around training"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a dense biology research passage containing multiple interconnected topics (cellular mechanisms, genetic expression, protein synthesis) to verify the prompt correctly identifies and separates distinct but related scientific concepts"
   },
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "85 kg",
-      "goal": "Muscle gain during bulk phase with strength focus",
-      "restrictions": "None"
+      "content": "This study examines the intersection of machine learning and artificial intelligence in clinical decision support systems. We employ neural networks and deep learning architectures to process patient data and develop predictive models for disease diagnosis. Our approach integrates natural language processing to extract relevant clinical information from electronic health records, while simultaneously applying computer vision techniques to analyze medical imaging. The algorithmic framework leverages both supervised and unsupervised learning methodologies to identify patterns in patient outcomes. We discuss how these AI-driven diagnostic tools can enhance clinical workflow efficiency and improve diagnostic accuracy in healthcare settings."
     },
     "solution_criteria": [
-      "Meal plan distributes protein across at least 4 meals with 25-40g per meal",
-      "Includes calorie surplus recommendation (estimated 300-500 kcal above maintenance)",
-      "Contains at least one recovery-focused meal post-workout with carbs and protein",
-      "Plan is presented in compact, easy-to-scan format with clear meal structure"
+      "Extracts all major topics without significant omissions",
+      "Avoids redundant entries (e.g., does not list both 'machine learning' and 'artificial intelligence' as separate topics if treated as synonymous)",
+      "Groups related concepts appropriately (e.g., 'neural networks' and 'deep learning' may be combined or kept separate based on reasonable judgment)",
+      "Returns output as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) during a bulk phase, verifying the plan emphasizes protein distribution across meals and includes calorie-surplus recommendations with recovery-focused meals"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a passage containing ambiguous or overlapping terminology where similar concepts could be grouped differently, to evaluate whether the prompt makes reasonable extraction decisions and avoids redundant or overly granular topic lists"
   },
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "75 kg",
-      "goal": "Create a 1-day meal plan for a boxer during cutting season that maintains lean muscle with a modest calorie deficit while supporting hydration and electrolyte balance",
-      "restrictions": "No shellfish, vegetarian protein sources preferred where possible"
+      "content": "The post-colonial period witnessed a fundamental reconceptualization of national identity as formerly colonized societies grappled with the legacies of imperialism and the construction of modern statehood. Benedict Anderson's concept of 'imagined communities' proved instrumental in understanding how nationalism emerged as a cultural artifact, particularly through the standardization of print capitalism and vernacular languages. Simultaneously, postcolonial theorists such as Edward Said examined the discursive mechanisms through which Orientalism perpetuated power asymmetries, revealing how Western knowledge production shaped colonial domination. The decolonization movements of the mid-twentieth century thus represented not merely political independence but a broader intellectual project of reclaiming agency, renegotiating cultural memory, and challenging Eurocentric epistemologies that had long structured global hierarchies."
     },
     "solution_criteria": [
-      "Meal plan creates a modest calorie deficit (10-15% below maintenance) appropriate for cutting while preserving muscle",
-      "Includes adequate protein distribution across meals (minimum 1.6g per kg bodyweight) to support lean muscle retention",
-      "Incorporates hydration and electrolyte considerations (water intake targets and electrolyte sources) relevant to weight-class athletes",
-      "Respects dietary restrictions and remains compact/concise (brief format suitable for quick reference)"
+      "Extracts broad conceptual topics (e.g., nationalism, postcolonialism, epistemology) alongside historical phenomena and theoretical frameworks",
+      "Captures abstract social theory concepts and cultural movements, not limited to concrete technical terms",
+      "Returns results as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a weight-class athlete (boxer) during cutting season, assessing whether the meal plan maintains lean muscle while creating a modest calorie deficit and includes hydration/electrolyte considerations"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a humanities/social science excerpt discussing historical events, cultural movements, and social theory to ensure the prompt can extract abstract and broad conceptual topics, not just concrete technical terms"
   }
 ]

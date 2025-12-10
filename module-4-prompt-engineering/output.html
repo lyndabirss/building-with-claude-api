@@ -117,11 +117,11 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">5.7 / 10</div>
+                    <div class="stat-value">8.7 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
-                    <div class="stat-value">33.3%</div>
+                    <div class="stat-value">100.0%</div>
                 </div>
             </div>
         </div>
@@ -140,234 +140,100 @@
             <tbody>
     
             <tr>
-                <td>Testing with a strength/power athlete (weightlifter) during a bulk phase, verifying the plan emphasizes protein distribution across meals and includes calorie-surplus recommendations with recovery-focused meals</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> Muscle gain during bulk phase with strength focus<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan distributes protein across at least 4 meals with 25-40g per meal<br>• Includes calorie surplus recommendation (estimated 300-500 kcal above maintenance)<br>• Contains at least one recovery-focused meal post-workout with carbs and protein<br>• Plan is presented in compact, easy-to-scan format with clear meal structure</td>
-                <td class="output"><pre># One-Day Muscle Gain Meal Plan
-**Athlete Profile:** 180cm, 85kg, Strength/Bulk Phase
-
----
-
-## Daily Nutritional Targets
-- **Calories:** 3,200 kcal
-- **Protein:** 170g (2.0g per kg bodyweight)
-- **Carbs:** 400g
-- **Fat:** 90g
-
----
-
-## MEAL PLAN
-
-### **BREAKFAST** (7:00 AM)
-*Pre-workout fuel*
-
-| Food | Amount | Calories | Protein | Carbs | Fat |
-|------|--------|----------|---------|-------|-----|
-| Oatmeal (dry) | 80g | 296 | 10g | 54g | 5g |
-| Whole milk | 300ml | 201 | 10g | 14g | 11g |
-| Banana | 150g | 134 | 1g | 34g | 0g |
-| Honey | 15g | 46 | 0g | 12g | 0g |
-| **Subtotal** | | **677** | **21g** | **114g** | **16g** |
-
----
-
-### **SNACK #1** (10:00 AM)
-*Mid-morning energy*
-
-| Food | Amount | Calories | Protein | Carbs | Fat |
-|------|--------|----------|---------|-------|-----|
-| Greek yogurt (0%) | 200g | 132 | 23g | 7g | 0g |
-| Granola | 40g | 180 | 5g | 28g | 6g |
-| Blueberries | 80g | 45 | 1g | 11g | 0g |
-| **Subtotal** | | **357** | **29g** | **46g** | **6g** |
-
----
-
-### **LUNCH** (1:00 PM)
-*Post-workout recovery*
-
-| Food | Amount | Calories | Protein | Carbs | Fat |
-|------|--------|----------|---------|-------|-----|
-| Chicken breast (cooked) | 200g | 330 | 62g | 0g | 7g |
-| White rice (cooked) | 250g | 325 | 7g | 72g | 1g |
-| Olive oil | 10ml | 90 | 0g | 0g | 10g |
-| Broccoli (cooked) | 150g | 52 | 5g | 10g | 0g |
-| **Subtotal** | | **797** | **74g** | **82g** | **18g** |
-
----
-
-### **SNACK #2** (4:00 PM)
-*Pre-training boost*
-
-| Food | Amount | Calories | Protein | Carbs | Fat |
-|------|--------|----------|---------|-------|-----|
-| White bread | 60g | 160 | 5g | 30g | 1g |
-| Peanut butter | 25g | 152 | 6g | 5g | 13g |
-| Apple | 180g | 95 | 0g | 25g | 0g |
-| **Subtotal** | | **407** | **11g** | **60g** | **14g** |
-
----
-
-### **DINNER** (7:30 PM)
-*Evening muscle building*
-
-| Food | Amount | Calories | Protein | Carbs | Fat |
-|------|--------|----------|---------|-------|-----|
-| Ground beef (90% lean) | 250g | 455 | 55g | 0g | 25g |
-| Sweet potato (baked) | 250g | 215 | 4g | 48g | 0g |
-| Mixed salad greens | 100g | 25 | 2g | 5g | 0g |
-| Olive oil dressing | 10ml | 90 | 0g | 0g | 10g |
-| **Subtotal** | | **785** | **61g**</pre></td>
-                <td class="score-col"><span class="score score-medium">6</span></td>
-                <td class="reasoning">The solution meets all three mandatory requirements with strong execution on format and content. The meal plan is well-structured with exact portions, timings, and clear macronutrient tracking. However, the truncated Dinner section is a critical flaw that prevents full verification of daily totals. The calorie surplus recommendation criterion is partially met (the surplus exists but lacks explicit justification). Protein distribution mostly aligns with the 25-40g per meal guideline across 4+ meals, though Snack #2 falls short. The incomplete final entry prevents a higher score despite otherwise excellent work.</td>
+                <td>Testing with a passage containing ambiguous or overlapping terminology where similar concepts could be grouped differently, to evaluate whether the prompt makes reasonable extraction decisions and avoids redundant or overly granular topic lists</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study examines the intersection of machine learning and artificial intelligence in clinical decision support systems. We employ neural networks and deep learning architectures to process patient data and develop predictive models for disease diagnosis. Our approach integrates natural language processing to extract relevant clinical information from electronic health records, while simultaneously applying computer vision techniques to analyze medical imaging. The algorithmic framework leverages both supervised and unsupervised learning methodologies to identify patterns in patient outcomes. We discuss how these AI-driven diagnostic tools can enhance clinical workflow efficiency and improve diagnostic accuracy in healthcare settings.</td>
+                <td class="criteria">• Extracts all major topics without significant omissions<br>• Avoids redundant entries (e.g., does not list both 'machine learning' and 'artificial intelligence' as separate topics if treated as synonymous)<br>• Groups related concepts appropriately (e.g., 'neural networks' and 'deep learning' may be combined or kept separate based on reasonable judgment)<br>• Returns output as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "machine learning",
+  "artificial intelligence",
+  "clinical decision support systems",
+  "neural networks",
+  "deep learning",
+  "predictive models",
+  "disease diagnosis",
+  "natural language processing",
+  "electronic health records",
+  "computer vision",
+  "medical imaging",
+  "supervised learning",
+  "unsupervised learning",
+  "patient outcomes",
+  "diagnostic accuracy",
+  "clinical workflow efficiency",
+  "patient data"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. Regarding secondary criteria, the extraction is thorough and avoids most redundancy. The grouping decisions are reasonable—keeping neural networks and deep learning separate is justified since they represent distinct concepts in the passage. The only minor issue is 'patient data,' which is more of a supporting element than a primary topic. This is a minor deficiency that doesn't significantly impact the overall quality of the extraction.</td>
             </tr>
         
             <tr>
-                <td>Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, focusing on whether the meal plan prioritizes energy density and includes appropriate timing around training</td>
-                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon training - high energy intake with carbohydrate loading for endurance performance<br><strong>restrictions:</strong> None</td>
-                <td class="criteria">• Meal plan includes 4-5 meals/snacks with high carbohydrate content (60-65% of total calories)<br>• Includes pre-training and post-training meal timing appropriate for marathon runner<br>• Total daily calorie intake appropriate for 72kg endurance athlete (approximately 3000-3500 calories)<br>• All meals are energy-dense and practical to prepare/consume within one day</td>
-                <td class="output"><pre># One-Day Marathon Training Meal Plan
-## For 72 kg Athlete
-
----
-
-## Daily Nutritional Targets
-- **Calories:** 3,200 kcal
-- **Protein:** 130g (16%)
-- **Carbohydrates:** 480g (60%)
-- **Fat:** 85g (24%)
-
-*Based on: 44 kcal/kg body weight for heavy endurance training*
-
----
-
-## BREAKFAST (7:00 AM)
-**Pre-training fuel**
-
-| Food | Portion | Protein | Carbs | Fat | Calories |
-|------|---------|---------|-------|-----|----------|
-| Oatmeal (dry) | 80g | 11g | 54g | 5g | 290 |
-| Banana | 120g | 1g | 27g | 0g | 107 |
-| Honey | 20g | 0g | 17g | 0g | 64 |
-| Low-fat milk | 250ml | 8g | 12g | 2g | 110 |
-| **Subtotal** | | **20g** | **110g** | **7g** | **571** |
-
----
-
-## MID-MORNING SNACK (10:30 AM)
-**During/after training (if running 90+ min)**
-
-| Food | Portion | Protein | Carbs | Fat | Calories |
-|------|---------|---------|-------|-----|----------|
-| Energy drink | 500ml | 0g | 30g | 0g | 120 |
-| Granola bar | 40g | 4g | 28g | 3g | 160 |
-| **Subtotal** | | **4g** | **58g** | **3g** | **280** |
-
----
-
-## LUNCH (1:00 PM)
-**Recovery & carb loading**
-
-| Food | Portion | Protein | Carbs | Fat | Calories |
-|------|---------|---------|-------|-----|----------|
-| Brown rice (cooked) | 250g | 6g | 54g | 2g | 270 |
-| Chicken breast (grilled) | 150g | 45g | 0g | 3g | 215 |
-| Broccoli (steamed) | 150g | 4g | 8g | 1g | 54 |
-| Olive oil | 10ml | 0g | 0g | 10g | 90 |
-| Orange juice | 200ml | 2g | 21g | 0g | 92 |
-| **Subtotal** | | **57g** | **83g** | **16g** | **721** |
-
----
-
-## AFTERNOON SNACK (4:00 PM)
-**Pre-dinner energy boost**
-
-| Food | Portion | Protein | Carbs | Fat | Calories |
-|------|---------|---------|-------|-----|----------|
-| Greek yogurt (low-fat) | 200g | 18g | 9g | 2g | 130 |
-| Granola | 30g | 3g | 24g | 2g | 140 |
-| Blueberries | 100g | 1g | 14g | 0g | 57 |
-| **Subtotal** | | **22g** | **47g** | **4g** | **327** |
-
----
-
-## DINNER (7:00 PM)
-**Carb-loaded evening meal**
-
-| Food | Portion | Protein | Carbs | Fat | Calories |
-|------|---------|---------|-------|-----|----------|
-| Sweet potato (baked) | 300g | 3g | 69g | 0g | 294 |
-| Salmon fillet (baked) | 120g | 24g | 0g | 8g | 200 |
-| Spinach (sautéed) | 100g | 3g | 1g | 3g | 40 |
-| Whole wheat bread | 60g | 6g | 32g | 2g |</pre></td>
-                <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution demonstrates strong understanding of marathon nutrition principles and meets all mandatory requirements in structure and intent. It provides daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing across 5 eating occasions. The carbohydrate loading strategy (60%) is well-executed and appropriate. However, the incomplete Dinner section is a critical flaw - the table cuts off without showing the final calorie count for that meal, making it impossible to verify the claimed 3,200 kcal daily total or confirm the exact macronutrient percentages. While this appears to be a formatting/transcription error rather than a conceptual problem, it technically violates the requirement to include a 'daily calorific total' that can be verified. The caloric intake is also slightly conservative for optimal endurance training. Despite these issues, the core content quality is high and the solution would function well if completed.</td>
+                <td>Testing with a dense biology research passage containing multiple interconnected topics (cellular mechanisms, genetic expression, protein synthesis) to verify the prompt correctly identifies and separates distinct but related scientific concepts</td>
+                <td class="prompt-inputs"><strong>content:</strong> The ribosome facilitates protein synthesis through a coordinated mechanism involving mRNA translation and tRNA recognition. During this process, the ribosomal subunits bind to the initiation complex, where specific codons are matched with anticodons in a sequence-dependent manner. Simultaneously, genetic expression is regulated at multiple levels: transcriptional control determines which genes are activated through promoter binding and chromatin remodeling, while post-transcriptional modifications including 5' capping and 3' polyadenylation enhance mRNA stability and translation efficiency. Furthermore, epigenetic mechanisms such as DNA methylation and histone acetylation modulate chromatin accessibility, directly influencing gene expression patterns. The nascent polypeptide chain emerges from the ribosomal exit tunnel, where molecular chaperones assist in proper protein folding to achieve functional three-dimensional conformations essential for cellular function.</td>
+                <td class="criteria">• Extracts all major distinct topics including: protein synthesis, mRNA translation, genetic expression, transcriptional control, post-transcriptional modifications, epigenetic mechanisms, and protein folding<br>• Separates related but distinct concepts (e.g., does not conflate mRNA translation with genetic expression, or transcriptional control with epigenetic regulation)<br>• Returns output as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "protein synthesis",
+  "mRNA translation",
+  "tRNA recognition",
+  "ribosomal subunits",
+  "initiation complex",
+  "codon-anticodon matching",
+  "genetic expression",
+  "transcriptional control",
+  "promoter binding",
+  "chromatin remodeling",
+  "post-transcriptional modifications",
+  "5' capping",
+  "3' polyadenylation",
+  "mRNA stability",
+  "translation efficiency",
+  "epigenetic mechanisms",
+  "DNA methylation",
+  "histone acetylation",
+  "chromatin accessibility",
+  "gene expression patterns",
+  "nascent polypeptide chain",
+  "ribosomal exit tunnel",
+  "molecular chaperones",
+  "protein folding",
+  "three-dimensional conformations"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. It meets the secondary criteria by extracting all major topics and properly distinguishing between related concepts. However, the extraction is somewhat over-inclusive, treating some minor details and sub-components as independent topics rather than focusing strictly on major distinct topics. The solution demonstrates good comprehension but could be more selective in what constitutes a 'major' topic versus supporting details.</td>
             </tr>
         
             <tr>
-                <td>Testing with a weight-class athlete (boxer) during cutting season, assessing whether the meal plan maintains lean muscle while creating a modest calorie deficit and includes hydration/electrolyte considerations</td>
-                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 75 kg<br><strong>goal:</strong> Create a 1-day meal plan for a boxer during cutting season that maintains lean muscle with a modest calorie deficit while supporting hydration and electrolyte balance<br><strong>restrictions:</strong> No shellfish, vegetarian protein sources preferred where possible</td>
-                <td class="criteria">• Meal plan creates a modest calorie deficit (10-15% below maintenance) appropriate for cutting while preserving muscle<br>• Includes adequate protein distribution across meals (minimum 1.6g per kg bodyweight) to support lean muscle retention<br>• Incorporates hydration and electrolyte considerations (water intake targets and electrolyte sources) relevant to weight-class athletes<br>• Respects dietary restrictions and remains compact/concise (brief format suitable for quick reference)</td>
-                <td class="output"><pre># 1-Day Meal Plan for Boxing Athlete (Cutting Season)
-
-## Daily Targets
-- **Calories:** 2,400 kcal (modest 300-400 kcal deficit)
-- **Protein:** 165g (2.2g per kg body weight)
-- **Carbohydrates:** 270g (support training intensity)
-- **Fat:** 65g (essential fatty acids)
-- **Sodium:** 3,500-4,000mg (hydration support)
-
----
-
-## BREAKFAST (7:00 AM)
-**Vegetarian Protein Omelet with Whole Grain Toast**
-
-| Item | Portion | Calories | Protein | Carbs | Fat |
-|------|---------|----------|---------|-------|-----|
-| Eggs (whole) | 2 large (100g) | 155 | 13g | 1g | 11g |
-| Egg whites | 2 large (60g) | 30 | 7g | 1g | 0g |
-| Spinach (cooked) | 100g | 23 | 3g | 4g | 0g |
-| Mushrooms (sautéed) | 80g | 14 | 2g | 2g | 0g |
-| Olive oil | 1 tsp (5g) | 45 | 0g | 0g | 5g |
-| Whole wheat toast | 2 slices (60g) | 160 | 6g | 28g | 2g |
-| Low-fat Greek yogurt | 30g | 35 | 5g | 1g | 1g |
-| **Subtotal** | | **462** | **36g** | **37g** | **19g** |
-
----
-
-## MID-MORNING SNACK (10:00 AM)
-**Recovery Smoothie + Hydration**
-
-| Item | Portion | Calories | Protein | Carbs | Fat |
-|------|---------|----------|---------|-------|-----|
-| Plant-based protein powder | 30g | 110 | 25g | 2g | 1g |
-| Banana | 120g | 107 | 1g | 27g | 0g |
-| Oats (dry) | 40g | 150 | 5g | 27g | 3g |
-| Almond butter | 15g | 90 | 3g | 3g | 8g |
-| Water | 350ml | 0 | 0g | 0g | 0g |
-| Himalayan salt | 0.5g pinch | 0 | 0g | 0g | 0g |
-| **Subtotal** | | **457** | **34g** | **59g** | **12g** |
-
-**Hydration:** Electrolyte drink (coconut water with added salt) - 250ml
-
----
-
-## LUNCH (1:00 PM)
-**Lentil & Quinoa Buddha Bowl**
-
-| Item | Portion | Calories | Protein | Carbs | Fat |
-|------|---------|----------|---------|-------|-----|
-| Cooked quinoa | 150g | 249 | 9g | 45g | 4g |
-| Cooked brown lentils | 120g | 174 | 13g | 30g | 1g |
-| Roasted chickpeas | 50g | 135 | 6g | 12g | 4g |
-| Bell peppers (mixed) | 100g | 31 | 1g | 7g | 0g |
-| Cucumber | 80g | 12 | 0g | 3g | 0g |
-| Cherry tomatoes | 100g | 18 | 1g | 4g | 0g |
-| Tahini dressing | 15g | 90 | 3g | 3g | 9g |
-| Sea salt | pinch | 0 | 0g | 0g | 0g |
-| **Subtotal** | | **709** | **33g</pre></td>
-                <td class="score-col"><span class="score score-low">4</span></td>
-                <td class="reasoning">The solution demonstrates strong planning and attention to detail in the sections provided, with excellent macro targeting and restriction compliance. However, it fails a mandatory requirement by being incomplete - the lunch entry is truncated and dinner/evening meals are missing entirely. This prevents verification of the claimed 2,400 kcal daily total and complete macronutrient breakdown. While the partial data shown is high-quality, the incomplete delivery is a critical flaw that undermines the core deliverable of a '1-day meal plan.' The solution meets 2 of 3 mandatory requirements (daily calorific total is stated but unverified due to incompleteness; macronutrient breakdown is partially shown; meals with timing and portions are partially shown).</td>
+                <td>Testing with a humanities/social science excerpt discussing historical events, cultural movements, and social theory to ensure the prompt can extract abstract and broad conceptual topics, not just concrete technical terms</td>
+                <td class="prompt-inputs"><strong>content:</strong> The post-colonial period witnessed a fundamental reconceptualization of national identity as formerly colonized societies grappled with the legacies of imperialism and the construction of modern statehood. Benedict Anderson's concept of 'imagined communities' proved instrumental in understanding how nationalism emerged as a cultural artifact, particularly through the standardization of print capitalism and vernacular languages. Simultaneously, postcolonial theorists such as Edward Said examined the discursive mechanisms through which Orientalism perpetuated power asymmetries, revealing how Western knowledge production shaped colonial domination. The decolonization movements of the mid-twentieth century thus represented not merely political independence but a broader intellectual project of reclaiming agency, renegotiating cultural memory, and challenging Eurocentric epistemologies that had long structured global hierarchies.</td>
+                <td class="criteria">• Extracts broad conceptual topics (e.g., nationalism, postcolonialism, epistemology) alongside historical phenomena and theoretical frameworks<br>• Captures abstract social theory concepts and cultural movements, not limited to concrete technical terms<br>• Returns results as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "post-colonial period",
+  "national identity",
+  "imperialism",
+  "modern statehood",
+  "imagined communities",
+  "nationalism",
+  "print capitalism",
+  "vernacular languages",
+  "postcolonial theory",
+  "Orientalism",
+  "discursive mechanisms",
+  "power asymmetries",
+  "Western knowledge production",
+  "colonial domination",
+  "decolonization movements",
+  "political independence",
+  "cultural memory",
+  "Eurocentric epistemologies",
+  "global hierarchies"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. It also meets the secondary criteria by extracting broad conceptual topics (nationalism, postcolonial theory, epistemology), theoretical frameworks (imagined communities, Orientalism), and historical phenomena (decolonization movements, imperialism). The extraction is thorough and well-balanced between abstract theory and concrete historical references. While some entries could be debated as slightly too granular or descriptive rather than topical, they remain legitimate topics mentioned in the scholarly text and do not violate any stated criteria.</td>
             </tr>
         
             </tbody>
