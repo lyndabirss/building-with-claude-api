@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# One-Day Muscle Gain Meal Plan\n**Athlete Profile:** 180cm, 85kg, Strength/Bulk Phase\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200 kcal\n- **Protein:** 170g (2.0g per kg bodyweight)\n- **Carbs:** 400g\n- **Fat:** 90g\n\n---\n\n## MEAL PLAN\n\n### **BREAKFAST** (7:00 AM)\n*Pre-workout fuel*\n\n| Food | Amount | Calories | Protein | Carbs | Fat |\n|------|--------|----------|---------|-------|-----|\n| Oatmeal (dry) | 80g | 296 | 10g | 54g | 5g |\n| Whole milk | 300ml | 201 | 10g | 14g | 11g |\n| Banana | 150g | 134 | 1g | 34g | 0g |\n| Honey | 15g | 46 | 0g | 12g | 0g |\n| **Subtotal** | | **677** | **21g** | **114g** | **16g** |\n\n---\n\n### **SNACK #1** (10:00 AM)\n*Mid-morning energy*\n\n| Food | Amount | Calories | Protein | Carbs | Fat |\n|------|--------|----------|---------|-------|-----|\n| Greek yogurt (0%) | 200g | 132 | 23g | 7g | 0g |\n| Granola | 40g | 180 | 5g | 28g | 6g |\n| Blueberries | 80g | 45 | 1g | 11g | 0g |\n| **Subtotal** | | **357** | **29g** | **46g** | **6g** |\n\n---\n\n### **LUNCH** (1:00 PM)\n*Post-workout recovery*\n\n| Food | Amount | Calories | Protein | Carbs | Fat |\n|------|--------|----------|---------|-------|-----|\n| Chicken breast (cooked) | 200g | 330 | 62g | 0g | 7g |\n| White rice (cooked) | 250g | 325 | 7g | 72g | 1g |\n| Olive oil | 10ml | 90 | 0g | 0g | 10g |\n| Broccoli (cooked) | 150g | 52 | 5g | 10g | 0g |\n| **Subtotal** | | **797** | **74g** | **82g** | **18g** |\n\n---\n\n### **SNACK #2** (4:00 PM)\n*Pre-training boost*\n\n| Food | Amount | Calories | Protein | Carbs | Fat |\n|------|--------|----------|---------|-------|-----|\n| White bread | 60g | 160 | 5g | 30g | 1g |\n| Peanut butter | 25g | 152 | 6g | 5g | 13g |\n| Apple | 180g | 95 | 0g | 25g | 0g |\n| **Subtotal** | | **407** | **11g** | **60g** | **14g** |\n\n---\n\n### **DINNER** (7:30 PM)\n*Evening muscle building*\n\n| Food | Amount | Calories | Protein | Carbs | Fat |\n|------|--------|----------|---------|-------|-----|\n| Ground beef (90% lean) | 250g | 455 | 55g | 0g | 25g |\n| Sweet potato (baked) | 250g | 215 | 4g | 48g | 0g |\n| Mixed salad greens | 100g | 25 | 2g | 5g | 0g |\n| Olive oil dressing | 10ml | 90 | 0g | 0g | 10g |\n| **Subtotal** | | **785** | **61g**",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "85 kg",
+        "goal": "Muscle gain during bulk phase with strength focus",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan distributes protein across at least 4 meals with 25-40g per meal",
+        "Includes calorie surplus recommendation (estimated 300-500 kcal above maintenance)",
+        "Contains at least one recovery-focused meal post-workout with carbs and protein",
+        "Plan is presented in compact, easy-to-scan format with clear meal structure"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) during a bulk phase, verifying the plan emphasizes protein distribution across meals and includes calorie-surplus recommendations with recovery-focused meals"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements with strong execution on format and content. The meal plan is well-structured with exact portions, timings, and clear macronutrient tracking. However, the truncated Dinner section is a critical flaw that prevents full verification of daily totals. The calorie surplus recommendation criterion is partially met (the surplus exists but lacks explicit justification). Protein distribution mostly aligns with the 25-40g per meal guideline across 4+ meals, though Snack #2 falls short. The incomplete final entry prevents a higher score despite otherwise excellent work."
+  },
+  {
+    "output": "# One-Day Marathon Training Meal Plan\n## For 72 kg Athlete\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200 kcal\n- **Protein:** 130g (16%)\n- **Carbohydrates:** 480g (60%)\n- **Fat:** 85g (24%)\n\n*Based on: 44 kcal/kg body weight for heavy endurance training*\n\n---\n\n## BREAKFAST (7:00 AM)\n**Pre-training fuel**\n\n| Food | Portion | Protein | Carbs | Fat | Calories |\n|------|---------|---------|-------|-----|----------|\n| Oatmeal (dry) | 80g | 11g | 54g | 5g | 290 |\n| Banana | 120g | 1g | 27g | 0g | 107 |\n| Honey | 20g | 0g | 17g | 0g | 64 |\n| Low-fat milk | 250ml | 8g | 12g | 2g | 110 |\n| **Subtotal** | | **20g** | **110g** | **7g** | **571** |\n\n---\n\n## MID-MORNING SNACK (10:30 AM)\n**During/after training (if running 90+ min)**\n\n| Food | Portion | Protein | Carbs | Fat | Calories |\n|------|---------|---------|-------|-----|----------|\n| Energy drink | 500ml | 0g | 30g | 0g | 120 |\n| Granola bar | 40g | 4g | 28g | 3g | 160 |\n| **Subtotal** | | **4g** | **58g** | **3g** | **280** |\n\n---\n\n## LUNCH (1:00 PM)\n**Recovery & carb loading**\n\n| Food | Portion | Protein | Carbs | Fat | Calories |\n|------|---------|---------|-------|-----|----------|\n| Brown rice (cooked) | 250g | 6g | 54g | 2g | 270 |\n| Chicken breast (grilled) | 150g | 45g | 0g | 3g | 215 |\n| Broccoli (steamed) | 150g | 4g | 8g | 1g | 54 |\n| Olive oil | 10ml | 0g | 0g | 10g | 90 |\n| Orange juice | 200ml | 2g | 21g | 0g | 92 |\n| **Subtotal** | | **57g** | **83g** | **16g** | **721** |\n\n---\n\n## AFTERNOON SNACK (4:00 PM)\n**Pre-dinner energy boost**\n\n| Food | Portion | Protein | Carbs | Fat | Calories |\n|------|---------|---------|-------|-----|----------|\n| Greek yogurt (low-fat) | 200g | 18g | 9g | 2g | 130 |\n| Granola | 30g | 3g | 24g | 2g | 140 |\n| Blueberries | 100g | 1g | 14g | 0g | 57 |\n| **Subtotal** | | **22g** | **47g** | **4g** | **327** |\n\n---\n\n## DINNER (7:00 PM)\n**Carb-loaded evening meal**\n\n| Food | Portion | Protein | Carbs | Fat | Calories |\n|------|---------|---------|-------|-----|----------|\n| Sweet potato (baked) | 300g | 3g | 69g | 0g | 294 |\n| Salmon fillet (baked) | 120g | 24g | 0g | 8g | 200 |\n| Spinach (saut\u00e9ed) | 100g | 3g | 1g | 3g | 40 |\n| Whole wheat bread | 60g | 6g | 32g | 2g |",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon training - high energy intake with carbohydrate loading for endurance performance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan includes 4-5 meals/snacks with high carbohydrate content (60-65% of total calories)",
+        "Includes pre-training and post-training meal timing appropriate for marathon runner",
+        "Total daily calorie intake appropriate for 72kg endurance athlete (approximately 3000-3500 calories)",
+        "All meals are energy-dense and practical to prepare/consume within one day"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, focusing on whether the meal plan prioritizes energy density and includes appropriate timing around training"
+    },
+    "score": 7,
+    "reasoning": "The solution demonstrates strong understanding of marathon nutrition principles and meets all mandatory requirements in structure and intent. It provides daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing across 5 eating occasions. The carbohydrate loading strategy (60%) is well-executed and appropriate. However, the incomplete Dinner section is a critical flaw - the table cuts off without showing the final calorie count for that meal, making it impossible to verify the claimed 3,200 kcal daily total or confirm the exact macronutrient percentages. While this appears to be a formatting/transcription error rather than a conceptual problem, it technically violates the requirement to include a 'daily calorific total' that can be verified. The caloric intake is also slightly conservative for optimal endurance training. Despite these issues, the core content quality is high and the solution would function well if completed."
+  },
+  {
+    "output": "# 1-Day Meal Plan for Boxing Athlete (Cutting Season)\n\n## Daily Targets\n- **Calories:** 2,400 kcal (modest 300-400 kcal deficit)\n- **Protein:** 165g (2.2g per kg body weight)\n- **Carbohydrates:** 270g (support training intensity)\n- **Fat:** 65g (essential fatty acids)\n- **Sodium:** 3,500-4,000mg (hydration support)\n\n---\n\n## BREAKFAST (7:00 AM)\n**Vegetarian Protein Omelet with Whole Grain Toast**\n\n| Item | Portion | Calories | Protein | Carbs | Fat |\n|------|---------|----------|---------|-------|-----|\n| Eggs (whole) | 2 large (100g) | 155 | 13g | 1g | 11g |\n| Egg whites | 2 large (60g) | 30 | 7g | 1g | 0g |\n| Spinach (cooked) | 100g | 23 | 3g | 4g | 0g |\n| Mushrooms (saut\u00e9ed) | 80g | 14 | 2g | 2g | 0g |\n| Olive oil | 1 tsp (5g) | 45 | 0g | 0g | 5g |\n| Whole wheat toast | 2 slices (60g) | 160 | 6g | 28g | 2g |\n| Low-fat Greek yogurt | 30g | 35 | 5g | 1g | 1g |\n| **Subtotal** | | **462** | **36g** | **37g** | **19g** |\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n**Recovery Smoothie + Hydration**\n\n| Item | Portion | Calories | Protein | Carbs | Fat |\n|------|---------|----------|---------|-------|-----|\n| Plant-based protein powder | 30g | 110 | 25g | 2g | 1g |\n| Banana | 120g | 107 | 1g | 27g | 0g |\n| Oats (dry) | 40g | 150 | 5g | 27g | 3g |\n| Almond butter | 15g | 90 | 3g | 3g | 8g |\n| Water | 350ml | 0 | 0g | 0g | 0g |\n| Himalayan salt | 0.5g pinch | 0 | 0g | 0g | 0g |\n| **Subtotal** | | **457** | **34g** | **59g** | **12g** |\n\n**Hydration:** Electrolyte drink (coconut water with added salt) - 250ml\n\n---\n\n## LUNCH (1:00 PM)\n**Lentil & Quinoa Buddha Bowl**\n\n| Item | Portion | Calories | Protein | Carbs | Fat |\n|------|---------|----------|---------|-------|-----|\n| Cooked quinoa | 150g | 249 | 9g | 45g | 4g |\n| Cooked brown lentils | 120g | 174 | 13g | 30g | 1g |\n| Roasted chickpeas | 50g | 135 | 6g | 12g | 4g |\n| Bell peppers (mixed) | 100g | 31 | 1g | 7g | 0g |\n| Cucumber | 80g | 12 | 0g | 3g | 0g |\n| Cherry tomatoes | 100g | 18 | 1g | 4g | 0g |\n| Tahini dressing | 15g | 90 | 3g | 3g | 9g |\n| Sea salt | pinch | 0 | 0g | 0g | 0g |\n| **Subtotal** | | **709** | **33g",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "75 kg",
+        "goal": "Create a 1-day meal plan for a boxer during cutting season that maintains lean muscle with a modest calorie deficit while supporting hydration and electrolyte balance",
+        "restrictions": "No shellfish, vegetarian protein sources preferred where possible"
+      },
+      "solution_criteria": [
+        "Meal plan creates a modest calorie deficit (10-15% below maintenance) appropriate for cutting while preserving muscle",
+        "Includes adequate protein distribution across meals (minimum 1.6g per kg bodyweight) to support lean muscle retention",
+        "Incorporates hydration and electrolyte considerations (water intake targets and electrolyte sources) relevant to weight-class athletes",
+        "Respects dietary restrictions and remains compact/concise (brief format suitable for quick reference)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a weight-class athlete (boxer) during cutting season, assessing whether the meal plan maintains lean muscle while creating a modest calorie deficit and includes hydration/electrolyte considerations"
+    },
+    "score": 4,
+    "reasoning": "The solution demonstrates strong planning and attention to detail in the sections provided, with excellent macro targeting and restriction compliance. However, it fails a mandatory requirement by being incomplete - the lunch entry is truncated and dinner/evening meals are missing entirely. This prevents verification of the claimed 2,400 kcal daily total and complete macronutrient breakdown. While the partial data shown is high-quality, the incomplete delivery is a critical flaw that undermines the core deliverable of a '1-day meal plan.' The solution meets 2 of 3 mandatory requirements (daily calorific total is stated but unverified due to incompleteness; macronutrient breakdown is partially shown; meals with timing and portions are partially shown)."
+  }
+]

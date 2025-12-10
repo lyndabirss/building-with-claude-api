@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training - high energy intake with carbohydrate loading for endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4-5 meals/snacks with high carbohydrate content (60-65% of total calories)",
+      "Includes pre-training and post-training meal timing appropriate for marathon runner",
+      "Total daily calorie intake appropriate for 72kg endurance athlete (approximately 3000-3500 calories)",
+      "All meals are energy-dense and practical to prepare/consume within one day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, focusing on whether the meal plan prioritizes energy density and includes appropriate timing around training"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Muscle gain during bulk phase with strength focus",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan distributes protein across at least 4 meals with 25-40g per meal",
+      "Includes calorie surplus recommendation (estimated 300-500 kcal above maintenance)",
+      "Contains at least one recovery-focused meal post-workout with carbs and protein",
+      "Plan is presented in compact, easy-to-scan format with clear meal structure"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) during a bulk phase, verifying the plan emphasizes protein distribution across meals and includes calorie-surplus recommendations with recovery-focused meals"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Create a 1-day meal plan for a boxer during cutting season that maintains lean muscle with a modest calorie deficit while supporting hydration and electrolyte balance",
+      "restrictions": "No shellfish, vegetarian protein sources preferred where possible"
+    },
+    "solution_criteria": [
+      "Meal plan creates a modest calorie deficit (10-15% below maintenance) appropriate for cutting while preserving muscle",
+      "Includes adequate protein distribution across meals (minimum 1.6g per kg bodyweight) to support lean muscle retention",
+      "Incorporates hydration and electrolyte considerations (water intake targets and electrolyte sources) relevant to weight-class athletes",
+      "Respects dietary restrictions and remains compact/concise (brief format suitable for quick reference)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a weight-class athlete (boxer) during cutting season, assessing whether the meal plan maintains lean muscle while creating a modest calorie deficit and includes hydration/electrolyte considerations"
+  }
+]
