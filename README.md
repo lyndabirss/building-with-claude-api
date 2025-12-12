@@ -6,6 +6,10 @@ Coursework and exercises from Anthropic's Building with the Claude API course
 ## About This Course
 A comprehensive course covering API integration, prompt engineering, advanced features, and building AI-powered applications with Claude.
 
+## Tools
+
+- **snippet-converter.html** - Utility for converting Python code into VS Code snippets to speed up repetitive course setup. Open in a browser, paste Python code, and get properly formatted VS Code snippet JSON.
+
 ## Course Modules
 
 ### 1. Introduction
@@ -38,7 +42,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Providing examples
 
 ### 5. Tool Use with Claude
-- [ ] Introduction to tool use
+- [x] Introduction to tool use
 - [ ] Tool functions and schemas
 - [ ] Handling message blocks
 - [ ] Multi-turn conversations with tools

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python → VS Code Snippet Converter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #4ec9b0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .subtitle {
+            color: #858585;
+            margin-bottom: 30px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #d4d4d4;
+        }
+        
+        input[type="text"] {
+            background: #2d2d2d;
+            border: 1px solid #3e3e3e;
+            color: #d4d4d4;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            min-width: 200px;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #4ec9b0;
+        }
+        
+        button {
+            background: #0e639c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        button:hover {
+            background: #1177bb;
+        }
+        
+        button:active {
+            background: #0d5a8f;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .panel {
+            background: #252526;
+            border: 1px solid #3e3e3e;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .panel-header {
+            background: #2d2d2d;
+            padding: 12px 15px;
+            border-bottom: 1px solid #3e3e3e;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .copy-btn {
+            background: #2d2d2d;
+            padding: 4px 12px;
+            font-size: 12px;
+            border: 1px solid #3e3e3e;
+        }
+        
+        .copy-btn:hover {
+            background: #3e3e3e;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 400px;
+            background: #1e1e1e;
+            border: none;
+            color: #d4d4d4;
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            resize: vertical;
+            line-height: 1.5;
+        }
+        
+        textarea:focus {
+            outline: none;
+        }
+        
+        .success {
+            color: #4ec9b0;
+            font-size: 12px;
+            margin-left: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .success.show {
+            opacity: 1;
+        }
+        
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python → VS Code Snippet Converter</h1>
+        <p class="subtitle">Paste your Python code, get VS Code snippet JSON instantly</p>
+        
+        <div class="controls">
+            <label>
+                Snippet Name:
+                <input type="text" id="snippetName" value="Helper Functions" placeholder="e.g., Helper Functions">
+            </label>
+            <label>
+                Prefix:
+                <input type="text" id="snippetPrefix" value="apihelper" placeholder="e.g., apihelper">
+            </label>
+            <button onclick="convert()">Convert →</button>
+            <span class="success" id="convertSuccess">✓ Converted</span>
+        </div>
+        
+        <div class="grid">
+            <div class="panel">
+                <div class="panel-header">
+                    Python Code Input
+                </div>
+                <textarea id="pythonInput" placeholder="Paste your Python code here..."># Helper functions
+def add_user_message(messages, text):
+    user_message = {"role": "user", "content": text}
+    messages.append(user_message)
+
+
+def add_assistant_message(messages, text):
+    assistant_message = {"role": "assistant", "content": text}
+    messages.append(assistant_message)
+
+
+def chat(messages, system=None, temperature=1.0, stop_sequences=[]):
+    params = {
+        "model": model,
+        "max_tokens": 1000,
+        "messages": messages,
+        "temperature": temperature,
+        "stop_sequences": stop_sequences,
+    }
+
+    if system:
+        params["system"] = system
+
+    message = client.messages.create(**params)
+    return message.content[0].text</textarea>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">
+                    VS Code Snippet JSON
+                    <button class="copy-btn" onclick="copyOutput()">
+                        Copy JSON <span class="success" id="copySuccess">✓</span>
+                    </button>
+                </div>
+                <textarea id="jsonOutput" readonly placeholder="Converted JSON will appear here..."></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-convert on page load with the example
+        window.addEventListener('DOMContentLoaded', () => {
+            convert();
+        });
+        
+        function convert() {
+            const pythonCode = document.getElementById('pythonInput').value;
+            const snippetName = document.getElementById('snippetName').value || "Code Snippet";
+            const snippetPrefix = document.getElementById('snippetPrefix').value || "snippet";
+            
+            if (!pythonCode.trim()) {
+                document.getElementById('jsonOutput').value = '';
+                return;
+            }
+            
+            // Split into lines and process each one
+            const lines = pythonCode.split('\n');
+            const bodyLines = lines.map(line => {
+                // Only escape backslashes - JSON.stringify will handle quotes
+                return line.replace(/\\/g, '\\\\');
+            });
+            
+            // Add cursor position marker at the end
+            bodyLines.push('$0');
+            
+            // Build the JSON structure
+            const snippetObj = {
+                [snippetName]: {
+                    prefix: snippetPrefix,
+                    body: bodyLines
+                }
+            };
+            
+            // Convert to formatted JSON
+            const jsonOutput = JSON.stringify(snippetObj, null, 2);
+            document.getElementById('jsonOutput').value = jsonOutput;
+            
+            // Show success message
+            const successMsg = document.getElementById('convertSuccess');
+            successMsg.classList.add('show');
+            setTimeout(() => successMsg.classList.remove('show'), 2000);
+        }
+        
+        async function copyOutput() {
+            const output = document.getElementById('jsonOutput');
+            try {
+                await navigator.clipboard.writeText(output.value);
+                const successMsg = document.getElementById('copySuccess');
+                successMsg.classList.add('show');
+                setTimeout(() => successMsg.classList.remove('show'), 2000);
+            } catch (err) {
+                // Fallback for older browsers
+                output.select();
+                document.execCommand('copy');
+            }
+        }
+        
+        // Auto-convert as user types (with debounce)
+        let convertTimeout;
+        document.getElementById('pythonInput').addEventListener('input', () => {
+            clearTimeout(convertTimeout);
+            convertTimeout = setTimeout(convert, 300);
+        });
+        
+        document.getElementById('snippetName').addEventListener('input', convert);
+        document.getElementById('snippetPrefix').addEventListener('input', convert);
+    </script>
+</body>
+</html>
