@@ -43,8 +43,8 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 
 ### 5. Tool Use with Claude
 - [x] Introduction to tool use
-- [ ] Tool functions and schemas
-- [ ] Handling message blocks
+- [x] Tool functions and schemas
+- [x] Handling message blocks
 - [ ] Multi-turn conversations with tools
 - [ ] Using multiple tools
 - [ ] The batch tool
