@@ -45,9 +45,9 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Introduction to tool use
 - [x] Tool functions and schemas
 - [x] Handling message blocks
-- [ ] Multi-turn conversations with tools
-- [ ] Using multiple tools
-- [ ] The batch tool
+- [x] Multi-turn conversations with tools
+- [x] Using multiple tools
+- [x] The batch tool
 - [ ] Fine grained tool calling
 - [ ] The text edit tool
 - [ ] The web search tool
