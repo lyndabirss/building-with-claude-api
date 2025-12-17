@@ -49,7 +49,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Using multiple tools
 - [x] The batch tool
 - [x] Fine grained tool calling
-- [ ] The text edit tool
+- [x] The text edit tool
 - [ ] The web search tool
 
 ### 6. Retrieval Augmented Generation (RAG)
