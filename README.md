@@ -48,7 +48,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Multi-turn conversations with tools
 - [x] Using multiple tools
 - [x] The batch tool
-- [ ] Fine grained tool calling
+- [x] Fine grained tool calling
 - [ ] The text edit tool
 - [ ] The web search tool
 
