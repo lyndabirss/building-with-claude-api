@@ -55,8 +55,8 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 ### 6. Retrieval Augmented Generation (RAG)
 - [x] Text chunking strategies
 - [x] Text embeddings
-- [ ] The full RAG flow
-- [ ] BM25 lexical search
+- [x] The full RAG flow
+- [x] BM25 lexical search
 - [ ] Multi-Index RAG pipeline
 - [ ] Reranking results
 - [ ] Contextual retrieval
