@@ -59,7 +59,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] BM25 lexical search
 - [x] Multi-Index RAG pipeline
 - [x] Reranking results
-- [ ] Contextual retrieval
+- [x] Contextual retrieval
 
 ### 7. Features of Claude
 - [ ] Extended thinking
