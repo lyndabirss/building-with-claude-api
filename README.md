@@ -58,7 +58,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] The full RAG flow
 - [x] BM25 lexical search
 - [x] Multi-Index RAG pipeline
-- [ ] Reranking results
+- [x] Reranking results
 - [ ] Contextual retrieval
 
 ### 7. Features of Claude
