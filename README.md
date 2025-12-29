@@ -57,7 +57,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Text embeddings
 - [x] The full RAG flow
 - [x] BM25 lexical search
-- [ ] Multi-Index RAG pipeline
+- [x] Multi-Index RAG pipeline
 - [ ] Reranking results
 - [ ] Contextual retrieval
 
