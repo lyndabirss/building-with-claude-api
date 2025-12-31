@@ -64,7 +64,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 ### 7. Features of Claude
 - [x] Extended thinking
 - [x] Image support
-- [ ] PDF support
+- [x] PDF support
 - [ ] Citations
 - [ ] Prompt caching
 - [ ] Code execution and the Files API
