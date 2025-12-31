@@ -62,7 +62,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Contextual retrieval
 
 ### 7. Features of Claude
-- [ ] Extended thinking
+- [x] Extended thinking
 - [ ] Image support
 - [ ] PDF support
 - [ ] Citations
