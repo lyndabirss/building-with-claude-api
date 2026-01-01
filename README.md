@@ -65,7 +65,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Extended thinking
 - [x] Image support
 - [x] PDF support
-- [ ] Citations
+- [x] Citations
 - [ ] Prompt caching
 - [ ] Code execution and the Files API
 
