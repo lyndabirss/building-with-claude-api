@@ -66,7 +66,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Image support
 - [x] PDF support
 - [x] Citations
-- [ ] Prompt caching
+- [x] Prompt caching
 - [ ] Code execution and the Files API
 
 ### 8. Model Context Protocol (MCP)
