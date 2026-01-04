@@ -1,0 +1,20 @@
+CHURN ANALYSIS SUMMARY
+Generated from: 006_streaming.csv
+Total Records: 500
+
+KEY METRICS:
+- Overall Churn Rate: 38.6%
+- Churned Customers: 193
+- Retained Customers: 307
+
+MAJOR DRIVERS (by importance):
+1. Low Engagement - Churned users watch 20.0% fewer hours
+2. Short Sessions - Churned users have 14.4% shorter sessions
+3. Limited Diversity - Churned users watch 18.1% fewer unique titles
+4. Service Issues - Churned users have 27.7% more support interactions
+5. Less Binging - Churned users have 19.7% fewer binge sessions
+
+SUBSCRIPTION TIER CHURN:
+- Basic: 43.5%
+- Standard: 39.5%
+- Premium: 24.1%
