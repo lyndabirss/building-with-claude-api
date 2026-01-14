@@ -70,7 +70,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Code execution and the Files API
 
 ### 8. Model Context Protocol (MCP)
-- [ ] MCP clients
+- [x] MCP clients
 - [ ] Defining tools with MCP
 - [ ] The server inspector
 - [ ] Implementing a client
