@@ -1,0 +1,48 @@
+# Model Context Protocol - Introducing MCP and MCP Clients
+
+## What is MCP?
+
+Communication layer providing Claude with context and tools without writing tedious integration code. Shifts burden of tool definitions and execution from your server to specialized MCP servers.
+
+## Key Concepts
+
+**Architecture Components**
+- **MCP Client**: Your server that connects to MCP servers
+- **MCP Server**: Interface to outside services containing tools, prompts, and resources
+- **Transport Agnostic**: Communication via stdin/stdout, HTTP, WebSockets, or other protocols
+
+**Value Proposition**
+- Pre-built tool schemas and functions (no need to author yourself)
+- Reusable components for complex integrations
+- Anyone can create MCP servers (often by service providers themselves)
+
+## MCP vs Direct API Integration
+
+| Approach | Tool Authoring | Maintenance |
+|----------|---------------|-------------|
+| **Direct API** | You write all tool schemas and functions | You maintain all code |
+| **MCP Server** | Pre-defined in server | Maintained by server author |
+
+## Message Flow
+
+**Core Message Types**
+- `ListToolsRequest/ListToolsResult` - Get available tools from server
+- `CallToolRequest/CallToolResult` - Execute tool and receive results
+
+**Complete Request Flow**
+1. User query → Your server
+2. Server → MCP Client → `ListToolsRequest` → MCP Server
+3. MCP Server → `ListToolsResult` → MCP Client → Server
+4. Server → Claude (with query + available tools)
+5. Claude responds with tool use request
+6. Server → MCP Client → `CallToolRequest` → MCP Server → External API
+7. API response → MCP Server → `CallToolResult` → MCP Client → Server
+8. Server → Claude (with tool results)
+9. Claude generates final response → Server → User
+
+## Key Takeaways
+
+- MCP servers package complex integrations into reusable components
+- MCP client handles all message passing and protocol details
+- Common misconception: MCP ≠ just tool use (it's about who creates/maintains tools)
+- Most common setup: Client and server on same machine via stdin/stdout
