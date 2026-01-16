@@ -71,10 +71,13 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 
 ### 8. Model Context Protocol (MCP)
 - [x] MCP clients
-- [ ] Defining tools with MCP
-- [ ] The server inspector
-- [ ] Implementing a client
-- [ ] Defining resources and prompts
+- [x] Defining tools with MCP
+- [x] The server inspector
+- [x] Implementing a client
+- [x] Defining resources
+- [ ] Accessing resources
+- [ ] Defining prompts
+- [ ] Prompts in the client
 
 ### 9. Anthropic Apps - Claude Code and Computer Use
 - [ ] Claude Code setup
