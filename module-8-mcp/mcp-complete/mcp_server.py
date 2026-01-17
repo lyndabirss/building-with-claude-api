@@ -16,8 +16,7 @@ docs = {
 
 
 
-# TODO: Write a prompt to rewrite a doc in markdown format
-# TODO: Write a prompt to summarize a doc
+
 
 
 
