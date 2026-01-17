@@ -75,7 +75,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] The server inspector
 - [x] Implementing a client
 - [x] Defining resources
-- [ ] Accessing resources
+- [x] Accessing resources
 - [ ] Defining prompts
 - [ ] Prompts in the client
 
