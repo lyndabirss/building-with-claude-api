@@ -76,7 +76,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Implementing a client
 - [x] Defining resources
 - [x] Accessing resources
-- [ ] Defining prompts
+- [x] Defining prompts
 - [ ] Prompts in the client
 
 ### 9. Anthropic Apps - Claude Code and Computer Use
