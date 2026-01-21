@@ -80,8 +80,8 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Prompts in the client
 
 ### 9. Anthropic Apps - Claude Code and Computer Use
-- [ ] Claude Code setup
-- [ ] Claude Code in action
+- [x] Claude Code setup
+- [x] Claude Code in action
 - [ ] Enhancements with MCP servers
 - [ ] Parallelizing Claude Code
 - [ ] Automated debugging
