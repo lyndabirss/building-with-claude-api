@@ -83,7 +83,7 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Claude Code setup
 - [x] Claude Code in action
 - [x] Enhancements with MCP servers
-- [ ] Parallelizing Claude Code
+- [x] Parallelizing Claude Code
 - [ ] Automated debugging
 - [ ] Computer use
 
