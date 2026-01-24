@@ -116,9 +116,9 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 
 ## Certificate
 This course includes a certificate upon completion. Certificate stored in personal portfolio (external to this repository).
+- Course completed and certificate issued 24/01/2026
 
 ## Notes
 Each module folder includes:
 - Working code examples (Jupyter notebooks)
 - Comments and markdown cells explaining key concepts
-- Course completed and certificate issued 24/01/2026
