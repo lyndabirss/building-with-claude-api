@@ -121,4 +121,4 @@ This course includes a certificate upon completion. Certificate stored in person
 Each module folder includes:
 - Working code examples (Jupyter notebooks)
 - Comments and markdown cells explaining key concepts
-- Course completed 24/01/2026
+- Course completed and certificate issued 24/01/2026
