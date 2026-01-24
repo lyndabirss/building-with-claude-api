@@ -84,8 +84,8 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Claude Code in action
 - [x] Enhancements with MCP servers
 - [x] Parallelizing Claude Code
-- [ ] Automated debugging
-- [ ] Computer use
+- [x] Automated debugging
+- [x] Computer use
 
 ### 10. Agents and Workflows
 - [ ] Parallelization workflows
