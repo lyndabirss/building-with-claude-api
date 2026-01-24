@@ -88,12 +88,12 @@ A comprehensive course covering API integration, prompt engineering, advanced fe
 - [x] Computer use
 
 ### 10. Agents and Workflows
-- [ ] Parallelization workflows
-- [ ] Chaining workflows
-- [ ] Routing workflows
-- [ ] Agents and tools
-- [ ] Environment inspection
-- [ ] Workflows vs agents
+- [x] Parallelization workflows
+- [x] Chaining workflows
+- [x] Routing workflows
+- [x] Agents and tools
+- [x] Environment inspection
+- [x] Workflows vs agents
 
 ## Repository Structure
 ```
